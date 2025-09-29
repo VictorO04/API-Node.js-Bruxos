@@ -136,7 +136,7 @@ const updateBruxo = (req, res) => {
         });
     }
 
-    const bruxoExiste = personagens.find(b => b.id === id);
+    const bruxoExiste = bruxos.find(b => b.id === id);
 
     if (!bruxoExiste) {
         return res.status(404).json({
